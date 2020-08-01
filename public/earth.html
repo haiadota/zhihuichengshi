@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>earth</title>
+  </head>
+  <style>
+      html,body{
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 100%;
+      }
+      .main{
+          display: block;
+          width: 100%;
+          height: 100%;
+      }
+      .btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        cursor: pointer;
+      }
+  </style>
+  <body>
+    <noscript>
+      <strong>We're sorry but smart-city doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <img src="earth.png" alt="" class="main">
+    <button class="btn" type="button" onclick="handleClick()">子页面按钮</button>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
+<script>
+  function handleClick() {
+    alert('子页面事件')
+  }
+</script>
